@@ -96,6 +96,10 @@
                         <source src="2026 art/1.mp4" type="video/mp4">
                     </video>
                 </div>
+                <div class="popup-image">
+                    <span>&times;</span>
+                    <img src="2026 art/16.png" alt="Minhkhoa Khan 2">                
+                </div>
             </section>
 
             <section id="2025">
@@ -114,6 +118,19 @@
                 <h2>2022</h2>
             </section>
         </section>
+    <script>
+        document.querySelectorAll('.art-section img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
 
     </main>
     
