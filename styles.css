@@ -76,11 +76,11 @@ nav .right a span {
 
 .hero-section .text h2 {
     font-size: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .hero-section .text .links {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .hero-section .text .links a {
@@ -105,8 +105,9 @@ nav .right a span {
 }
 
 .hero-section .headshot img{
-    width: 200px;
+    width: 330px;
     border-radius: 40%;
+    border: 5px dotted var(--link-color);
 }
 
 /*art-section*/
@@ -114,7 +115,6 @@ nav .right a span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding: 0 50px;
     margin: 50px 0;
     gap: 40px;
@@ -122,13 +122,13 @@ nav .right a span {
 
 .art-section h2 {
     margin: 25px 0;
+    text-align: center;
 }
 
 .art-section .gallery-grid {
-    flex-direction: row;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 25px;
 }
 
@@ -136,7 +136,7 @@ nav .right a span {
     width: 100%;
     height: 100%;
     display: inline;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: .1s;
 }
